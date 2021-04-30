@@ -10,6 +10,8 @@ import { RatingController } from './rating/rating.controller';
 import { CategoryController } from './category/category.controller';
 import { CategoryService } from './category/category.service';
 import { RatingModule } from './rating/rating.module';
+import { AuthenticationModule } from './authentication/authentication.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -20,7 +22,9 @@ import { RatingModule } from './rating/rating.module';
     DatabaseModule,
     BrandModule,
     CategoryModule,
-    RatingModule
+    RatingModule,
+    AuthenticationModule,
+    UsersModule
   ],
   controllers: [AppController],
   providers: [AppService],
